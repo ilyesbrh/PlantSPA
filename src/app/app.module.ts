@@ -1,3 +1,4 @@
+import { ErrorInterceptor } from './services/error.interceptor';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -23,7 +24,7 @@ import { LoginService } from './services/login.service';
     FormsModule
   ],
   providers: [
-    LoginService
+    LoginService, ErrorInterceptor
   ],
   bootstrap: [AppComponent]
 })

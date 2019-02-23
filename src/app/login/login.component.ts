@@ -1,5 +1,6 @@
 import { LoginService } from './../services/login.service';
 import { Component, OnInit } from '@angular/core';
+declare let alertify: any;
 
 @Component({
   selector: 'app-login',
@@ -9,17 +10,27 @@ import { Component, OnInit } from '@angular/core';
 export class LoginComponent implements OnInit {
 
   model: any = {};
-  constructor(private loginService: LoginService) { }
+
+  constructor(public loginService: LoginService) { }
 
   ngOnInit() {
   }
 
   login() {
     this.loginService.login(this.model).subscribe(next => {
-      console.log('Done');
+      alertify.success('Welcome ' + this.getName());
     }, error => {
-      console.error('error ocurred');
+      alertify.error('Can\'t Login');
     });
   }
-
+  logout() {
+    alertify.error('Good Bye :\') ' + this.getName());
+    this.loginService.LogOut();
+  }
+  getName(): string {
+    return this.loginService.getName();
+  }
+  isLogged() {
+    return this.loginService.isTokenExpired();
+  }
 }
