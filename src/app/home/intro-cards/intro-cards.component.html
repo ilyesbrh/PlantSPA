@@ -1,0 +1,13 @@
+<div class="row m-0 p-0">
+  <div id="description" class="col-12">
+    <h3>
+      {{description}}
+    </h3>
+  </div>
+  <div class=" col-md-4 col-sm-12 text-center hover" *ngFor="let item of intro_cards" style="background-color: white;">
+    <div class="text-center" >
+      <img [src]="item.imgURL" alt="explication image" class="img-fluid col-sm-1">
+      <p class="col-sm-11 m-0">{{item.text}}</p>
+    </div>
+  </div>
+</div>

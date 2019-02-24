@@ -24,7 +24,7 @@ export class LoginComponent implements OnInit {
     });
   }
   logout() {
-    alertify.error('Good Bye :\') ' + this.getName());
+    alertify.warning('Good Bye :\') ' + this.getName());
     this.loginService.LogOut();
   }
   getName(): string {

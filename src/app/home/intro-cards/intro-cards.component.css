@@ -1,0 +1,14 @@
+.hover :hover{
+  background-color: whitesmoke;
+}
+.center {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+}
+#description{
+  text-align: center;
+  background-color:#FF217A;
+  color: white;
+}
