@@ -19,6 +19,7 @@ import { HomeComponent } from './home/home.component';
 import { IntroCardsComponent } from './home/intro-cards/intro-cards.component';
 import { FooterCustomComponent } from './home/footer-custom/footer-custom.component';
 import { CustomCarouselComponent } from './home/custom-carousel/custom-carousel.component';
+import { RegistrationComponent } from './registration/registration.component';
 /* END home */
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { CustomCarouselComponent } from './home/custom-carousel/custom-carousel.
     ValuesComponent,
     LoginComponent,
     NavbarComponent,
-    HomeComponent, IntroCardsComponent, CustomCarouselComponent, FooterCustomComponent
+    HomeComponent, IntroCardsComponent, CustomCarouselComponent, FooterCustomComponent, RegistrationComponent
   ],
   imports: [
     BrowserModule,
