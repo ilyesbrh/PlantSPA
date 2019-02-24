@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IntroCardsComponent implements OnInit {
 
-  description = 'هي مبادرة تسعى إلى تقليص فجوة التواصل بين المتبرعين وبنوك الدم حتى تصبح عملية التبرع بالدم أسهل.';
+  description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore';
   intro_cards = [
     { imgURL: '../../assets/images/leaf.png', text: card1_text[0] },
     { imgURL: '../../assets/images/takephoto.png', text: card1_text[1] },
@@ -20,8 +20,8 @@ export class IntroCardsComponent implements OnInit {
 
 }
 const card1_text = [
-  'متبر وتين فخور بكل فرد مبادر بالعطاء على عمله الإنساني. {وَمَنْ أَحْيَاهَا فَكَأنَّمَا أَحْيَا النَّاسَ جَمِيْعَاً} المائدة:٣٢',
-  'أشخاص ينتظرون تبرعك اليوم!',
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore',
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore',
   'Using just a simple smartphone picture, Plantix image recognition \
           is able to detect more than 240 plant pests & diseases automatically.'
 ];
